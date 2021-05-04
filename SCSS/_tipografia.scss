@@ -1,0 +1,41 @@
+/*Bold*/
+@font-face{
+    font-family: "AkzidenzGrotesk-BoldCond";
+    src: url("../Tipografia/AkzidenzGrotesk-BoldCond.otf");
+}
+
+$tipoBold : "AkzidenzGrotesk-BoldCond";
+
+@mixin textBold($size,$color) {
+    font-family: $tipoBold;
+    font-size: $size;
+    color: $color;
+}
+
+/*Medium*/
+@font-face {
+    font-family: "AkzidenzGrotesk-MediumCond";
+    src: url("../Tipografia/AkzidenzGrotesk-MediumCond.otf");
+}
+
+$tipoMedium : "AkzidenzGrotesk-MediumCond";
+
+@mixin textMedium($size,$color) {
+    font-family: $tipoMedium;
+    font-size: $size;
+    color: $color;
+}
+
+/*Light*/
+@font-face{
+    font-family: "AkzidenzGrotesk-LightCond";
+    src: url("../Tipografia/AkzidenzGrotesk-LightCond.otf");
+}
+
+$tipoLight : "AkzidenzGrotesk-LightCond";
+
+@mixin textLight($size,$color) {
+    font-family: $tipoLight;
+    font-size: $size;
+    color: $color;
+}

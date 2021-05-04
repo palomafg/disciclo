@@ -1,0 +1,620 @@
+/*Tipografía*/
+@font-face {
+    font-family: "AkzidenzGrotesk-MediumCond";
+    src: url("../Tipografia/AkzidenzGrotesk-MediumCond.otf");
+}
+
+@font-face{
+    font-family: "AkzidenzGrotesk-LightCond";
+    src: url("../Tipografia/AkzidenzGrotesk-LightCond.otf");
+}
+
+@font-face{
+    font-family: "AkzidenzGrotesk-BoldCond";
+    src: url("../Tipografia/AkzidenzGrotesk-BoldCond.otf");
+}
+/*Fin Tipografía*/
+
+/*Adaptación Multimedia*/
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+video{
+    max-width: 100%;
+    max-height: 100%;
+}
+/*Fin Adaptación Multimedia*/
+
+/*Cuerpo página*/
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+/*Fin Cuerpo página*/
+
+/*Contenedores Principales*/
+.contenedorInicio{
+    display: grid;
+    grid-template-rows: 17vh 10vh 150vh 10vh;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-areas: 
+                        "header  header  header"
+                        "nav     nav     nav"
+                        "section section section"
+                        "footer  footer  footer";
+}
+.contenedorFechas{
+    display: grid;
+    grid-template-rows: 17vh 10vh 110vh 10vh;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-areas: 
+                        "header  header  header"
+                        "nav     nav     nav"
+                        "section section section"
+                        "footer  footer  footer";
+}
+.contenedorGaleria{
+    display: grid;
+    grid-template-rows: 17vh 10vh 210vh 10vh;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+                        "header"
+                        "nav"
+                        "section"
+                        "footer";
+}
+.contenedorContacto{
+    display: grid;
+    grid-template-rows: 17vh 10vh 190vh 10vh;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-areas: 
+                        "header  header  header"
+                        "nav     nav     nav"
+                        "section section section"
+                        "footer  footer  footer";
+}
+.contenedorAcercaDe{
+    display: grid;
+    grid-template-rows: 17vh 10vh 140vh 10vh;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-areas: 
+                        "header  header  header"
+                        "nav     nav     nav"
+                        "section section section"
+                        "footer  footer  footer";
+}
+/*Fin Contenedores Principales*/
+
+/*Encabezado*/
+header{
+    grid-area: header;
+    background-color: black;
+    width:100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+                        "logo titulo titulo .";
+}
+
+/*Logo*/
+#logo{
+    grid-area: logo;
+    margin: 5px;
+}
+
+/*Nombre*/
+#titulo{
+    grid-area: titulo;
+    width: 50%;
+    height: 90%;
+    background-color: black;
+    justify-self: center;
+    align-self: center;
+
+    font-family: 'AkzidenzGrotesk-BoldCond', sans-serif;
+    color: whitesmoke;
+    font-size: 240%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#tit{
+    font-size: 200%;
+} /*Porque Bootstrap pone otro tamaño*/
+
+#titulo h1{
+    margin: 0px;
+    padding: 0px;
+}
+/*Fin Encabezado*/
+
+/*Navegador*/
+nav{
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+    background: rgb(20,14,115);
+    background: linear-gradient(90deg, rgba(20,14,115,1) 0%, rgba(133,11,91,1) 100%);
+}
+
+#menu{
+    height:100%;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#antiB{
+    text-decoration: none;
+}/*Porque Bootstrap le pone decoration*/
+
+.items{
+    font-family: 'AkzidenzGrotesk-LightCond', sans-serif;
+    color: whitesmoke;
+    font-style:normal;
+    font-weight: bold;
+    font-size: 180%;
+    text-decoration: none;
+
+    transition: all 0.8s;
+}
+
+.items:hover{
+    color: black;
+}
+/*Fin Navegador*/
+
+/*Estilo Noticias*/
+/*Noticia Uno*/
+#news1{
+    grid-area: news1;
+    text-decoration: none;
+    margin: 25px;
+}
+
+/*Noticia Dos*/
+#news2{
+    grid-area: news2;
+    text-decoration: none;
+    margin: 25px;
+}
+
+/*Noticia Tres*/
+#news3{
+    grid-area: news3;
+    text-decoration: none;
+    margin: 25px;
+}
+
+/*Noticia Cuatro*/
+#news4{
+    grid-area: news4;
+    text-decoration: none;
+    margin: 25px;
+}
+
+/*Noticia Cinco*/
+#news5{
+    grid-area: news5;
+    text-decoration: none;
+    margin: 25px;
+}
+
+/*Noticia Seis*/
+#news6{
+    grid-area: news6;
+    text-decoration: none;
+    margin: 25px;
+}
+/*Fin Estilo Noticias*/
+
+/*Contenido Galería*/
+#edicion{
+    color: white;
+    font-family: 'AkzidenzGrotesk-MediumCond', sans-serif;
+    font-size: 240%;
+    margin: 20px;
+}
+
+.fotos{
+    height: 50%;
+}
+/*Fin Contenido Galería*/
+
+/*Pie de página*/
+footer{
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+    background: rgb(133,11,91);
+    background: linear-gradient(90deg, rgba(133,11,91,1) 0%, rgba(20,14,115,1) 100%);
+    
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-areas: "tel mail ig";
+
+    justify-content: center;
+    align-items: center;
+}
+
+#ft{
+    margin-top: 8px;
+    font-weight: bold;
+}/*Porque Bootstrap me cambia formato*/
+
+h6{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'AkzidenzGrotesk-LightCond', sans-serif;
+    color: black;
+    font-size: 140%;
+    letter-spacing: 1px;
+}
+
+.icon{
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+}
+
+#tel{
+    grid-area: tel;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mail{
+    grid-area: mail;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ig{
+    grid-area: ig;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Fin Pie de página*/
+
+/*Responsive Tablet*/
+@media only screen and (max-width:768px){
+
+    #contenedor{
+        display: grid;
+        grid-template-rows: 15vh 100vh 8vh;
+        grid-template-columns: 15% 85%;
+        grid-template-areas: 
+                            "header  header"
+                            "nav     section"
+                            "footer  footer";
+    }
+
+    #logo{
+        padding: 15px;
+    }
+
+    #titulo{
+        width: 75%;
+        height: 50%;
+        justify-self: center;
+        align-self: center;
+        font-size: 260%;
+        text-align: center;
+    }
+
+    nav{
+        background: rgb(20,14,115);
+        background: linear-gradient(180deg, rgba(20,14,115,1) 0%, rgba(133,11,91,1) 100%);
+    }
+
+    #menu{
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .items{
+        font-size: 140%;
+    }
+
+    #noticias{
+        display: grid;
+        grid-template-rows: 33.333% 33.333% 33.333%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+                            "news1 news2"
+                            "news3 news4"
+                            "news5 news6";
+    }
+
+    #news1{
+        margin: 15px;
+    }
+    
+    #news2{
+        margin: 15px;
+    }
+    
+    #news3{
+        margin: 15px;
+    }
+    
+    #news4{
+        margin: 15px;
+    }
+    
+    #news5{
+        margin: 15px;
+    }
+    
+    #news6{
+        margin: 15px;
+    }
+
+    .contenedorFechas{
+        display: grid;
+        grid-template-rows: 15vh 100vh 8vh;
+        grid-template-columns: 15% 85%;
+        grid-template-areas: 
+                            "header  header"
+                            "nav     section"
+                            "footer  footer";
+    }
+
+
+    .contenedorGaleria{
+        display: grid;
+        grid-template-rows: 15vh 245vh 8vh;
+        grid-template-columns: 15% 85%;
+        grid-template-areas: 
+                            "header  header"
+                            "nav     section"
+                            "footer  footer";
+    }
+
+    .contenedorContacto{
+        display: grid;
+        grid-template-rows: 15vh 155vh 8vh;
+        grid-template-columns: 15% 85%;
+        grid-template-areas: 
+                            "header  header"
+                            "nav     section"
+                            "footer  footer";
+    }
+
+    .contenedorAcercaDe{
+        display: grid;
+        grid-template-rows: 15vh 145vh 8vh;
+        grid-template-columns: 15% 85%;
+        grid-template-areas: 
+                            "header  header"
+                            "nav     section"
+                            "footer  footer";
+    }
+
+    #resp{
+        font-size: 150%;
+    }
+
+    h6{
+        font-size: 120%;
+        letter-spacing: 1px;
+    }
+    
+    .icon{
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+}
+/*Fin Responsive Tablet*/
+
+/*Responsive Celular*/
+@media only screen and (max-width:480px){
+
+    #contenedor{
+        display: grid;
+        grid-template-rows: 10vh 290vh 6vh;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: 
+                            "header  header"
+                            "nav     section"
+                            "footer  footer";
+    }
+
+    #logo{
+        margin: 5px;
+        padding: 0px;
+    }
+
+    #titulo{
+        height: 66%;
+        font-size: 150%;
+    }
+
+    .items{
+        font-size: 110%;
+    }
+
+    #noticias{
+        grid-area: section;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+                            "news1"
+                            "news2"
+                            "news3"
+                            "news4"
+                            "news5"
+                            "news6";
+    }
+
+    #news1{
+        margin: 5px;
+    }
+    
+    #news2{
+        margin: 5px;
+    }
+    
+    #news3{
+        margin: 5px;
+    }
+    
+    #news4{
+        margin: 5px;
+    }
+    
+    #news5{
+        margin: 5px;
+    }
+    
+    #news6{
+        margin: 5px;
+    }
+
+    .contenedorFechas{
+        display: grid;
+        grid-template-rows: 15vh 190vh 8vh;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: 
+                            "header  header"
+                            "nav     section"
+                            "footer  footer";
+    }
+
+    .flyers{
+        grid-area: section;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .contenedorGaleria{
+        display: grid;
+        grid-template-rows: 15vh 200vh 8vh;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: 
+                            "header  header"
+                            "nav     section"
+                            "footer  footer";
+    }
+
+    .contenedorContacto{
+        display: grid;
+        grid-template-rows: 15vh 125vh 8vh;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: 
+                            "header  header"
+                            "nav     section"
+                            "footer  footer";
+    }
+
+    .formulario{
+        font-size: 45%;
+    }
+
+    .formulario__titulo{
+        margin: 5px;
+    }
+
+    .infoPersonal{
+        margin: 10px;
+    }
+
+    .infoRedes{
+        margin: 20px;
+    }
+
+    .infoArtista{
+        margin: 10px;
+    }
+
+    .infoArtista .queHace{
+        margin: 0px;
+    }
+
+    .infoArtista .quiereHacer{
+        margin: 10px;
+    }
+
+    .botones{
+        margin: 30px;
+    }
+
+    .contenedorAcercaDe{
+        display: grid;
+        grid-template-rows: 15vh 160vh 8vh;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: 
+                            "header  header"
+                            "nav     section"
+                            "footer  footer";
+    }
+
+    #resp{
+        font-size: 95%;
+    }
+
+    .infoAcercaDe .info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoAcercaDe .info .queEs{
+        width: 70%;
+        margin: 10px;
+    }
+
+    .infoAcercaDe .info .comoSurge{
+        width: 70%;
+        margin: 10px;
+    }
+
+    .infoAcercaDe .info .dondeEs{
+        width: 70%;
+        margin: 10px;
+    }
+
+    table{
+        font-size: 90%;
+    }
+    
+    th{
+        font-size: 110%;
+    }
+
+    h6{
+        font-size: 80%;
+    }
+    
+    .icon{
+        width: 14px;
+        height: 14px;
+        margin-right: 3px;
+    }
+
+}
+/*Fin Responsive Celular*/

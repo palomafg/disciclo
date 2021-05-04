@@ -1,0 +1,309 @@
+@import "tipografia";
+
+/*Estilo Index - Noticias*/
+.noticias{
+    grid-area: section;
+    padding: 10px 20px 10px 0px;
+
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-areas: 
+                        "news1 news2 news3"
+                        "news4 news5 news6";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+    .post{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        text-align: center;
+        border: whitesmoke 1px dotted;
+
+        justify-self: center;
+        align-self: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &__img{
+            height: 60%;
+            margin: 5px;
+        }
+
+        &__title{
+            margin: 7px;
+            @include textMedium(210%,lightgray);
+        }
+
+        &__text{
+            margin: 7px;
+            @include textLight(130%,lightgray)
+        }
+
+        transition: all 2s;
+    }
+    .post:hover{
+        transform: scale(0.85,0.85);
+    }
+
+}
+/*Fin Estilo Index - Noticias*/
+
+/*Estilo Fechas - Flyers*/
+.flyers{
+    grid-area: section;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .card{
+        background-color: rgb(92, 12, 64);
+        margin: 10px;
+        text-align: center;
+
+        &-img-top{
+            padding: 15px;
+        }
+
+        &-title{
+            @include textBold(200%,whitesmoke);
+        }
+
+        &-text{
+            @include textLight(160%,lightgray);
+        }
+
+        &-btn{
+            background-color: rgb(26, 18, 139);
+            @include textMedium(140%,lightgray);
+        }
+
+    }
+}
+/*Fin Estilo Fechas - Flyers*/
+
+/*Estilo Galeria - Fotos y Videos*/
+.fotos{
+    padding: 25px;
+}
+
+.cuadro{
+    margin: 0px;
+    padding: 15px;
+
+    &__titulo{
+        @include textMedium(200%,lightgray);
+        margin: 5px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    &__video{
+        padding: 0px;
+    }
+}
+/*Fin Estilo Galeria - Fotos y Videos*/
+
+/*Estilo Contacto - Formulario*/
+.formulario{
+    grid-area: section;
+    background-color: rgb(15, 10, 82);
+    width: 85%;
+    height: 95%;
+    justify-self: center;
+    align-self: center;
+
+    &__titulo{
+        @include textMedium(350%, white);
+        margin: 30px 0px 30px 0px;
+        padding: 0px;
+        text-align: center;
+    }
+}
+
+.infoPersonal{
+    @include textLight(200%, whitesmoke);
+    margin: 40px;
+
+    .genero{
+        &__label{
+            text-align: center;
+        }
+    
+        &__content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}
+
+.infoRedes{
+    @include textLight(195%, whitesmoke);
+    text-align: center;
+    margin: 60px;
+}
+
+.infoArtista{
+    @include textLight(185%, whitesmoke);
+    margin: 20px;
+
+    .queHace{
+        margin: 70px;
+        text-align: center;
+    }
+
+    .quiereHacer{
+        margin: 60px;
+
+        &__content{
+            textarea{
+                font-size: 90%;
+            }
+        }
+    }
+}
+
+.botones{
+    @include textLight(190%, whitesmoke);
+    margin: 0px 150px 0px 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__reset{
+        input{
+            background-color: rgb(133,11,91);
+            font-size: 80%;
+            color: whitesmoke;
+        }
+        input:hover{
+            background-color: rgb(75, 11, 52);
+        }
+    }
+
+    &__submit{
+        input{
+            background-color: rgb(133,11,91);
+            font-size: 100%;
+            color: white;
+        }
+
+        input:hover{
+            background-color: rgb(214, 20, 146);
+        }
+    }
+}
+/*Fin Estilo Contacto - Formulario*/
+
+/*Estilo Acerca De - Info y Tabla*/
+.infoAcercaDe{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    .info{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .queEs{
+            width: 30%;
+            margin: 20px;
+    
+            &__preg{
+                @include textMedium(200%,whitesmoke);
+                text-align: center;
+                font-weight: bold;
+            }
+    
+            &__resp{
+                @include textLight(150%,lightgray);
+                text-align:center;
+                font-weight: lighter;
+            }
+        }
+    
+        .comoSurge{
+            width: 30%;
+            margin: 15px;
+    
+            &__preg{
+                @include textMedium(200%,whitesmoke);
+                text-align: center;
+                font-weight: bold;
+            }
+    
+            &__resp{
+                @include textLight(150%,lightgray);
+                text-align: center;
+                font-weight: lighter;
+            }
+        }
+    
+        .dondeEs{
+            width: 30%;
+            margin: 20px;
+    
+            &__preg{
+                @include textMedium(200%,whitesmoke);
+                text-align: center;
+                font-weight: bold;
+            }
+    
+            &__resp{
+                @include textLight(150%,lightgray);
+                text-align: center;
+                font-weight: lighter;
+            }
+        }
+    }
+    
+
+    .ediciones{
+        align-self: center;
+        margin: 20px;
+
+        &__titulo{
+            @include textBold(250%,white);
+            text-align: center;
+            font-weight: bolder;
+            margin: 10px;
+        }
+
+        &__tabla{
+            @include textLight(140%,white);
+            background-color: black;
+            text-align: center;
+        }
+
+        .tabla{
+
+            &__head{
+                @include textMedium(150%,whitesmoke);
+                padding: 7px;
+            }
+
+            &__data{
+                padding: 5px;
+            }
+
+            &__artistas{
+                margin: 0px;
+                padding: 7px;
+                list-style: none;
+                text-align: start;
+            }
+        }
+    }
+}
+/*Fin Estilo Acerca De - Info y Tabla*/

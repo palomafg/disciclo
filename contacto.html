@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--CSS de Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!--CSS de Animación-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!--Hojas de Estilo-->
+        <link rel="stylesheet" href="./CSS/estiloConSASS.css">
+        <link rel="stylesheet" href="./CSS/estilo2.css"/>
+
+        <title>DISCICLO - Contacto</title>
+        <meta name="description" content="Si tenés interés en presentarte en alguna de las ediciones de DISCICLO, completa el formulario y nos contactamos a la brevedad.">
+        <meta name="keywords" content="DISCICLO, ciclo, fiesta, artistas, emergentes, under, show, musica, luces, baile">
+    </head>
+
+    <body>
+        <div class="contenedorContacto">
+            
+            <!--Encabezado-->
+            <header>
+                <!--Logo-->
+                <div class="animate__animated animate__fadeInLeft" id="logo">
+                    <img src="Multimedia/logo.png" alt="Logo">
+                </div>
+                <!--Fin Logo-->
+
+                <!--Nombre-->
+                <div class="animate__animated animate__fadeInRight" id="titulo">
+                    <h1 id="tit">DISCICLO</h1>
+                </div>
+                <!--Fin Nombre-->
+            </header>
+            <!--Fin Encabezado-->
+        
+            <!--Navegador-->
+            <nav>
+                <ul id="menu">
+                    <li> <a href="index.html" id="antiB" class="items">INICIO</a> </li>
+                    <li> <a href="fechas.html" id="antiB" class="items">FECHAS</a> </li>
+                    <li> <a href="galeria.html" id="antiB" class="items">GALERÍA</a> </li>
+                    <li> <a href="contacto.html" id="antiB" class="items">ARTISTAS</a> </li>
+                    <li> <a href="acercaDe.html" id="antiB" class="items">NOSOTROS</a> </li>
+                </ul>
+            </nav>
+            <!--Fin Navegador-->
+        
+            <!--Contenido Contacto-->
+            <div class="formulario">
+
+                <div class="row">
+                    <h2 class="formulario__titulo col-12">Querés presentarte en DISCICLO?</h2>
+                </div>
+                
+                <!--Información Personal-->
+                <form class="infoPersonal row">
+                    <!--Nombre-->
+                    <div class="nombre col-12 col-lg-4">
+                        <div class="nombre__label">
+                            <label for="nombreApellido">Cómo te llamas?</label>
+                        </div>
+                      
+                        <div class="nombre__content">
+                            <input type="text" class="form-control" name="nombreApellido" placeholder="Nombre Apellido">
+                        </div>
+                    </div>
+                    <!--Artista-->
+                    <div class="artista col-12 col-lg-4">
+                        <div class="artista__label">
+                            <label for="nombreArtistico">Cuál es tu nombre artístico?</label>
+                        </div>
+                      
+                        <div class="artista__content">
+                            <input type="text" class="form-control" name="nombreArtistico" placeholder="Nombre artístico">
+                        </div>
+                    </div>
+                    <!--Género-->
+                    <div class="genero col-12 col-lg-4">
+                        <div class="genero__label">
+                            <label for="genero">Qué pronombres preferís?</label>
+                        </div>
+
+                        <div class="genero__content">
+                            <div>
+                                <input type="radio" name="genero" value="Mujer">
+                                <span>Ella</span> 
+                            </div>
+                            
+                            <div>
+                                <input type="radio" name="genero" value="Hombre">
+                                <span>Él</span>
+                            </div>
+                            
+                            <div>
+                                <input type="radio" name="genero" value="No binarie">
+                                <span>Elle</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!--Fin Información Personal-->
+
+                <!--Información de Contacto-->
+                <form class="infoRedes">
+
+                    <div class="infoRedes__label row">
+                        <label class="col-12" for="redes">Cómo podemos comunicarnos con vos?</label>
+                    </div>
+                    
+                    <div class="infoRedes__content row" name="redes">
+                        <!--Instagram-->
+                        <div class="input-group mb-3 col-12 col-lg-4">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Mi instagram es...">
+                        </div>
+                        <!--Celular-->
+                        <div class="input-group mb-3 col-12 col-lg-4">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Mi celular es...">
+                        </div>
+                        <!--Email-->
+                        <div class="input-group mb-3 col-12 col-lg-4">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Mi email es...">
+                        </div>
+                    </div>
+                </form>
+                <!--Fin Información de Contacto-->
+
+                <!--Información del Artista-->
+                <form class="infoArtista">
+                    <!--Qué hace-->
+                    <div class="queHace row">
+                        <div class="queHace__label col-6 col-lg-4">
+                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">A qué te dedicas?</label>
+                        </div>
+                        
+                        <div class="queHace__content col-6">
+                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                <option selected>Soy...</option>
+                                <option value="1">Músico/a/x</option>
+                                <option value="2">DJ</option>
+                                <option value="3">VJ</option>
+                                <option value="4">Artista visual</option>
+                                <option value="5">Performer</option>
+                                <option value="6">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--Qué quiere hacer-->
+                    <div class="quiereHacer form-group row">
+                        <div class="quiereHacer__label col-12">
+                            <label for="exampleFormControlTextarea1">Contanos brevemente cómo te gustaría presentarte en DISCICLO:</label>
+                        </div>
+                        
+                        <div class="quiereHacer__content col-12">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" cols="10" rows="7"></textarea>
+                        </div>
+                    </div>
+                </form>
+                <!--Fin Información del Artista-->
+
+                <!--Botones-->
+                <div class="botones">
+                    <!--Restablecer-->
+                    <div class="botones__reset">
+                        <input class="btn" type="reset" value="Restablecer">
+                    </div>
+                    <!--Enviar-->
+                    <div class="botones__submit">
+                        <input class="btn" type="submit" value="Enviar">
+                    </div>
+                </div>
+                <!--Fin Botones-->
+
+            </div>
+            <!--Fin Contenido Contacto-->
+        
+            <!--Pie de página-->
+            <footer>
+                <!--Teléfono-->
+                <div id="tel">
+                    <div class="icon">
+                        <img src="Multimedia/telefonoIcon.png" alt="Icono Telefono">
+                    </div>
+                    <h6 id="ft">+54 9 11-1234-5678</h6>
+                </div>
+                <!--Fin teléfono-->
+
+                <!--Mail-->
+                <div id="mail">
+                    <div class="icon">
+                        <img src="Multimedia/mailIcon.png" alt="Icono Email">
+                    </div>
+                    <h6 id="ft">disciclo@gmail.com</h6>
+                </div>
+                <!--Fin Mail-->
+
+                <!--Instagram-->
+                <div id="ig">
+                    <div class="icon">
+                        <img src="Multimedia/igIcon.png" alt="Icono Instagram">
+                    </div>
+                    <h6 id="ft">disciclo</h6>
+                </div>
+                <!--Fin Instagram-->
+            </footer>
+            <!--Fin pie de página-->
+        </div>
+        
+        <!--JS de Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        
+    </body>
+
+</html>
