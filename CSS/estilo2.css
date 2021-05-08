@@ -38,7 +38,7 @@ body {
 /*Contenedores Principales*/
 .contenedorInicio{
     display: grid;
-    grid-template-rows: 17vh 10vh 150vh 10vh;
+    grid-template-rows: 17vh 10vh auto 10vh;
     grid-template-columns: 33.333% 33.333% 33.333%;
     grid-template-areas: 
                         "header  header  header"
@@ -48,7 +48,7 @@ body {
 }
 .contenedorFechas{
     display: grid;
-    grid-template-rows: 17vh 10vh 110vh 10vh;
+    grid-template-rows: 17vh 10vh auto 10vh;
     grid-template-columns: 33.333% 33.333% 33.333%;
     grid-template-areas: 
                         "header  header  header"
@@ -58,7 +58,7 @@ body {
 }
 .contenedorGaleria{
     display: grid;
-    grid-template-rows: 17vh 10vh 210vh 10vh;
+    grid-template-rows: 17vh 10vh auto 10vh;
     grid-template-columns: 100%;
     grid-template-areas: 
                         "header"
@@ -68,7 +68,7 @@ body {
 }
 .contenedorContacto{
     display: grid;
-    grid-template-rows: 17vh 10vh 190vh 10vh;
+    grid-template-rows: 17vh 10vh auto 10vh;
     grid-template-columns: 33.333% 33.333% 33.333%;
     grid-template-areas: 
                         "header  header  header"
@@ -78,7 +78,7 @@ body {
 }
 .contenedorAcercaDe{
     display: grid;
-    grid-template-rows: 17vh 10vh 140vh 10vh;
+    grid-template-rows: 17vh 10vh auto 10vh;
     grid-template-columns: 33.333% 33.333% 33.333%;
     grid-template-areas: 
                         "header  header  header"
@@ -302,7 +302,7 @@ h6{
 
     #contenedor{
         display: grid;
-        grid-template-rows: 15vh 100vh 8vh;
+        grid-template-rows: 15vh auto 8vh;
         grid-template-columns: 15% 85%;
         grid-template-areas: 
                             "header  header"
@@ -311,7 +311,7 @@ h6{
     }
 
     #logo{
-        padding: 15px;
+        padding: 10px;
     }
 
     #titulo{
@@ -319,8 +319,9 @@ h6{
         height: 50%;
         justify-self: center;
         align-self: center;
-        font-size: 260%;
+        font-size: 200%;
         text-align: center;
+        padding-bottom: 30px;
     }
 
     nav{
@@ -375,7 +376,7 @@ h6{
 
     .contenedorFechas{
         display: grid;
-        grid-template-rows: 15vh 100vh 8vh;
+        grid-template-rows: 15vh auto 8vh;
         grid-template-columns: 15% 85%;
         grid-template-areas: 
                             "header  header"
@@ -386,7 +387,7 @@ h6{
 
     .contenedorGaleria{
         display: grid;
-        grid-template-rows: 15vh 245vh 8vh;
+        grid-template-rows: 15vh auto 8vh;
         grid-template-columns: 15% 85%;
         grid-template-areas: 
                             "header  header"
@@ -396,7 +397,7 @@ h6{
 
     .contenedorContacto{
         display: grid;
-        grid-template-rows: 15vh 155vh 8vh;
+        grid-template-rows: 15vh auto 8vh;
         grid-template-columns: 15% 85%;
         grid-template-areas: 
                             "header  header"
@@ -406,7 +407,7 @@ h6{
 
     .contenedorAcercaDe{
         display: grid;
-        grid-template-rows: 15vh 145vh 8vh;
+        grid-template-rows: 15vh auto 8vh;
         grid-template-columns: 15% 85%;
         grid-template-areas: 
                             "header  header"
@@ -436,7 +437,7 @@ h6{
 
     #contenedor{
         display: grid;
-        grid-template-rows: 10vh 290vh 6vh;
+        grid-template-rows: 10vh auto 6vh;
         grid-template-columns: 20% 80%;
         grid-template-areas: 
                             "header  header"
@@ -498,7 +499,7 @@ h6{
 
     .contenedorFechas{
         display: grid;
-        grid-template-rows: 15vh 190vh 8vh;
+        grid-template-rows: 15vh auto 8vh;
         grid-template-columns: 20% 80%;
         grid-template-areas: 
                             "header  header"
@@ -514,7 +515,7 @@ h6{
 
     .contenedorGaleria{
         display: grid;
-        grid-template-rows: 15vh 200vh 8vh;
+        grid-template-rows: 15vh auto 8vh;
         grid-template-columns: 20% 80%;
         grid-template-areas: 
                             "header  header"
@@ -524,7 +525,7 @@ h6{
 
     .contenedorContacto{
         display: grid;
-        grid-template-rows: 15vh 125vh 8vh;
+        grid-template-rows: 15vh auto 8vh;
         grid-template-columns: 20% 80%;
         grid-template-areas: 
                             "header  header"
@@ -561,12 +562,12 @@ h6{
     }
 
     .botones{
-        margin: 30px;
+        margin: 20px;
     }
 
     .contenedorAcercaDe{
         display: grid;
-        grid-template-rows: 15vh 160vh 8vh;
+        grid-template-rows: 15vh auto 8vh;
         grid-template-columns: 20% 80%;
         grid-template-areas: 
                             "header  header"
